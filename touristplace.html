@@ -1,236 +1,41 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Student Profile</title>
-  <style>
-    :root {
-      --navy: #10243a;
-      --blue: #1769aa;
-      --paper: #f4f7fb;
-      --ink: #203044;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.55;
-    }
-
-    header {
-      padding: 56px 22px 46px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(125deg, #10243a, #1769aa);
-    }
-
-    header .eyebrow {
-      color: #ffda8b;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      font-size: .78rem;
-      font-weight: bold;
-    }
-
-    h1 { margin: 10px 0 8px; font-size: clamp(2rem, 5vw, 3.5rem); }
-    header p { margin: 0 auto; max-width: 650px; color: #e4edf7; }
-
-    main { width: min(1080px, calc(100% - 32px)); margin: 34px auto 60px; }
-
-    section {
-      margin: 26px 0;
-      padding: 26px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 8px 28px #17324b12;
-    }
-
-    h2 { margin: 0 0 6px; color: var(--navy); }
-    .intro { margin: 0 0 20px; color: #617286; }
-
-    .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .photo-card { overflow: hidden; border: 1px solid #e2e9f0; border-radius: 14px; background: #fbfcfe; }
-
-    .photo-frame {
-      height: 220px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, #e6eef7, #d5e4f3);
-      color: #536b81;
-      text-align: center;
-      padding: 16px;
-    }
-
-    .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: none; }
-    .photo-card h3 { margin: 14px 14px 2px; color: var(--navy); }
-    .photo-card p { margin: 0 14px 10px; font-size: .9rem; color: #617286; }
-    .photo-card input { width: calc(100% - 28px); margin: 0 14px 16px; }
-
-    .links { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-    .link-item { padding: 14px; border: 1px solid #e2e9f0; border-radius: 12px; }
-    .link-item label { display: block; font-weight: bold; font-size: .9rem; margin-bottom: 7px; }
-
-    input[type="url"] {
-      width: 100%;
-      padding: 10px 11px;
-      border: 1px solid #cbd6e2;
-      border-radius: 8px;
-      font: inherit;
-    }
-
-    .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .video-card { border: 1px solid #e2e9f0; border-radius: 14px; padding: 16px; }
-    .video-card h3 { margin: 0 0 10px; color: var(--navy); }
-    .video-card iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; background: #e8eef5; }
-    .video-card input { margin: 0 0 10px; }
-    .hint { color: #68798b; font-size: .86rem; }
-
-    button {
-      border: 0;
-      border-radius: 8px;
-      padding: 10px 14px;
-      color: white;
-      background: var(--blue);
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover { background: #10588f; }
-    footer { text-align: center; padding: 24px; background: var(--navy); color: #dce7f2; }
-
-    @media (max-width: 760px) {
-      .photo-grid { grid-template-columns: 1fr; }
-      .links { grid-template-columns: 1fr 1fr; }
-      .video-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 430px) {
-      section { padding: 19px; }
-      .links { grid-template-columns: 1fr; }
-    }
-  </style>
+    <title>Tourist Places in India</title>
 </head>
 <body>
-  <header>
-    <div class="eyebrow">Student Profile</div>
-    <h1>My Journey, My Campus, My Game</h1>
-    <p>A little about me, my college, and the sport I love. Add your own photos, useful links, and videos below.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Photo Gallery</h2>
-      <p class="intro">Choose an image from your device for each section.</p>
+    <h1>Tourist Places in India</h1>
 
-      <div class="photo-grid">
-        <article class="photo-card">
-          <div class="photo-frame"><span>Select your student photo below</span><img alt="Student portrait"></div>
-          <h3>My Student Photo</h3>
-          <p>Introduce yourself with a photo.</p>
-          <input type="file" accept="image/*" aria-label="Choose your student photo" data-photo>
-        </article>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td align="center">
+                <img src="https://imgs.search.brave.com/lEupkrFfyrBkJZQ6fIqCi4sQoAxtmAzooL9vYfSwU1U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/c3RhdGljbWIuY29t/L21iY29udGVudC9p/bWFnZXMvY3JvcC91/cGxvYWRzL3ZlcjIv/WEl3dlFsYzYxdDha/SXBhbno0bUFtVFU1/WGI4RlV1Q1hmZ0dG/a2NxT2RfVlI0Zy9J/bmRpYSUyMEdhdGUl/MjBkZWxoaV8wXzEy/MDAuanBn" alt="India Gate" width="200" height="150">
+                <br>
+                <b>India Gate</b>
+            </td>
 
-        <article class="photo-card">
-          <div class="photo-frame"><span>Select an ABES college photo below</span><img alt="ABES college"></div>
-          <h3>ABES College</h3>
-          <p>A view of my college and campus.</p>
-          <input type="file" accept="image/*" aria-label="Choose an ABES college photo" data-photo>
-        </article>
+            <td align="center">
+                <img src="https://imgs.search.brave.com/Ht12zohAREFYj6DgUBdC7CobPTOeJDvCiBdbIgFht-c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vYmxvZ3Mu/Zm9haWRpbmRpYS5p/bi93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8wOS9SZWQtRm9y/dC1sYWwtcWlsYS5q/cGc_cmVzaXplPTgw/MCw1MzQmc3NsPTE" alt="Red Fort" width="200" height="150">
+                <br>
+                <b>Red Fort</b>
+            </td>
+        </tr>
 
-        <article class="photo-card">
-          <div class="photo-frame"><span>Select a sports personality photo below</span><img alt="Sports personality"></div>
-          <h3>Sports Inspiration</h3>
-          <p>Add a photo of your favourite sportsperson.</p>
-          <input type="file" accept="image/*" aria-label="Choose a sports personality photo" data-photo>
-        </article>
-      </div>
-    </section>
+        <tr>
+            <td align="center">
+                <img src="https://imgs.search.brave.com/MeqyPV29PIjCMhcOmYy5CRH8CDOTaVv4-eBM2mf_ETg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE3/NjMyNjI5NzkyOTct/MDE2NzI2YTM2YzZl/P2ZtPWpwZyZxPTYw/Jnc9MzAwMCZhdXRv/PWZvcm1hdCZmaXQ9/Y3JvcCZpeGxpYj1y/Yi00LjEuMCZpeGlk/PU5Id3hNakEzZkRB/PQ" alt="Qutub Minar" width="200" height="150">
+                <br>
+                <b>Qutub Minar</b>
+            </td>
 
-    <section>
-      <h2>My Favorite Links</h2>
-      <p class="intro">Paste a web address into each box, then select “Open link.”</p>
+            <td align="center">
+                <img src="https://images.unsplash.com/photo-1688257609244-3f2a893f19d6?q=80&w=2138&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Lotus Temple" width="200" height="150">
+                <br>
+                <b>Lotus Temple</b>
+            </td>
+        </tr>
+    </table>
 
-      <div class="links">
-        <div class="link-item"><label for="link1">Link 1</label><input id="link1" type="url" placeholder="https://example.com"><button onclick="openLink('link1')">Open link</button></div>
-        <div class="link-item"><label for="link2">Link 2</label><input id="link2" type="url" placeholder="https://example.com"><button onclick="openLink('link2')">Open link</button></div>
-        <div class="link-item"><label for="link3">Link 3</label><input id="link3" type="url" placeholder="https://example.com"><button onclick="openLink('link3')">Open link</button></div>
-        <div class="link-item"><label for="link4">Link 4</label><input id="link4" type="url" placeholder="https://example.com"><button onclick="openLink('link4')">Open link</button></div>
-        <div class="link-item"><label for="link5">Link 5</label><input id="link5" type="url" placeholder="https://example.com"><button onclick="openLink('link5')">Open link</button></div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Videos</h2>
-      <p class="intro">Paste a YouTube link and press “Load video.”</p>
-
-      <div class="video-grid">
-        <article class="video-card">
-          <h3>My Sports Highlights</h3>
-          <input id="sportsUrl" type="url" placeholder="Paste your sports highlights video URL">
-          <button onclick="loadVideo('sportsUrl', 'sportsFrame')">Load video</button>
-          <p class="hint">Use the link for your sports highlight video.</p>
-          <iframe id="sportsFrame" title="My sports highlights video" allowfullscreen></iframe>
-        </article>
-
-        <article class="video-card">
-          <h3>IIT Delhi Campus Tour</h3>
-          <input id="campusUrl" type="url" placeholder="Paste an IIT Delhi campus tour video URL">
-          <button onclick="loadVideo('campusUrl', 'campusFrame')">Load video</button>
-          <p class="hint">Paste the YouTube link for the IIT Delhi campus tour.</p>
-          <iframe id="campusFrame" title="IIT Delhi campus tour video" allowfullscreen></iframe>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>Made by a student • Keep learning, keep playing</footer>
-
-  <script>
-    document.querySelectorAll('[data-photo]').forEach(input => {
-      input.addEventListener('change', () => {
-        const file = input.files && input.files[0];
-        if (!file) return;
-
-        const frame = input.closest('.photo-card').querySelector('.photo-frame');
-        const img = frame.querySelector('img');
-        img.src = URL.createObjectURL(file);
-        img.style.display = 'block';
-        frame.querySelector('span').style.display = 'none';
-      });
-    });
-
-    function openLink(id) {
-      const field = document.getElementById(id);
-      if (!field.value) {
-        field.focus();
-        return;
-      }
-
-      let url = field.value.trim();
-      if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
-
-    function loadVideo(inputId, frameId) {
-      const field = document.getElementById(inputId);
-      const match = field.value.match(
-        /(?:youtube\.com\/(?:watch\?.*v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/i
-      );
-
-      if (!match) {
-        field.focus();
-        alert('Please paste a valid YouTube video link.');
-        return;
-      }
-
-      document.getElementById(frameId).src =
-        'https://www.youtube-nocookie.com/embed/' + match[1];
-    }
-  </script>
 </body>
 </html>
